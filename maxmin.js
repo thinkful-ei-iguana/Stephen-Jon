@@ -14,3 +14,15 @@ function max(numbers){
 
 let thisArray = [];
 console.log(max(thisArray));
+
+function min(numbers) {
+  let currentMin = numbers[0];
+  let i = 0;
+  while (i < numbers.length) {
+    if (numbers[i] < currentMin) {
+      currentMin = numbers[i];
+    }
+    i++
+  }
+  return currentMin;
+}
